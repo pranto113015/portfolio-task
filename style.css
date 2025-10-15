@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto+Mono:wght@300;500&family=Poppins:wght@600&display=swap');
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0eefa;
+  color: #111;
+  line-height: 1.6;
+}
+
+
+/* Hero Section */
+#hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 4rem 1rem;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Left Text Section */
+.hero-text {
+  flex: 1 1 400px;
+}
+
+.intro {
+  color: #7c3aed;
+  font-weight: bold;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  font-family: 'Roboto Mono';
+}
+
+.hero-text h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  font-family: 'Montserrat';
+
+}
+
+.description {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 2rem;
+  max-width: 500px;
+  font-family: 'Roboto Mono';
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+ 
+}
+
+/* Main work-button Button */
+.work-button {
+  background-color: #7c3aed;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+   font-family: 'Roboto Mono';
+}
+
+.work-button:hover {
+  background-color: #5b21b6;
+}
+
+/* Play Button */
+.play-button {
+  border-radius: 50%;
+  border: 3px solid #7c3aed;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  transition: 0.3s;
+}
+
+.play-button:hover {
+  background-color: #7c3aed;
+}
+
+.play-button:hover svg polygon {
+  fill: white;
+}
+
+.play-button:hover svg circle {
+  stroke: white;
+}
+
+/* Right Image Section */
+.hero-image {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Responsive Design  for hero section*/
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-image {
+    margin-top: 2rem;
+    order: -1;
+  }
+
+  .button-group {
+    justify-content: center;
+  }
+}
+
+
+/* Services Section */
+.services-container {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+.service-heading{
+  font-family: 'Montserrat';
+  font-size: clamp(2rem, 10vw, 8rem)
+
+}
+
+.services-container h2 {
+    /* font-weight: 900; */
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  letter-spacing: 2px;
+  color: #111;
+  font-size: 4rem;
+}
+
+.services-grid {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  /* font-family: revert; */
+  
+  right: 30px;  
+  font-family: 'Roboto Mono';
+}
+
+.service-item {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  flex: 1 1 280px;
+  max-width: 320px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.icon-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 1.4rem;
+}
+
+/* Individual icon colors */
+.icon-webdesign {
+  background-color: #7ea8ff;
+}
+
+.icon-uiux {
+  background-color: #84f4c6;
+}
+
+.icon-seo {
+  background-color: #a386ff;
+}
+
+.service-item h3 {
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  color: #222;
+  font-family: 'Poppins';
+}
+
+.stat-box p {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      font-family: 'Roboto Mono';
+    }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .services-container h2 {
+    font-size: 3rem;
+  }
+
+  .services-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+   .service-item {
+    max-width: 100%;
+    text-align: center;
+    text-align: -webkit-center;
+  }
+  
+}
+
+.stats-container {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+     .stats-container h2 {
+      /* font-weight: 900; */
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      font-size: 3.5rem;
+      font-family: 'Montserrat';
+    }
+
+    .stats-grid {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .stat-box {
+      flex: 1 1 250px;
+      padding: 2rem;
+      border-radius: 6px;
+      text-align: left;
+      color: #111;
+      min-width: 250px;
+      margin: 2px 16px;
+    }
+
+    .stat-box h3 {
+      font-weight: 900;
+      font-size: 2.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-box strong {
+      display: block;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .stat-box p {
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    /* Background colors */
+    .stat-yellow {
+      background-color: #f9f2ad;
+    }
+
+    .stat-green {
+      background-color: #b3f5d8;
+    }
+
+    .stat-purple {
+      background-color: #b7a8ff;
+      color: #000; /* black text for contrast */
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+       .stats-grid {
+        flex-direction: column;
+        align-items: center;
+        row-gap: normal;
+      }
+
+      .stat-box {
+        max-width: 100%;
+      }
+    }
+
+
+
+
+
+
+/* TITLE */
+.title {
+  font-size: 3.5rem;
+  /* font-weight: 800; */
+  text-align: center;
+  margin: 60px 0;
+}
+.projects-section{
+    margin:auto;
+}
+/* PROJECT CARD */
+.project-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-bottom: 80px; */
+  width: 90%;
+  max-width: 950px;
+  margin: 48px auto; 
+  flex-wrap: wrap;
+}
+
+.project-card img {
+  width: 35%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  filter: brightness(85%);
+  transition: all 0.4s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.02);
+}
+
+/* INFO BOX */
+.project-info {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 25px;
+  border-radius: 15px;
+  width: 400px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.project-info.right {
+  right: 30px;
+  font-family: 'Roboto Mono';
+}
+
+.project-info.left {
+  left: 30px;
+  font-family: 'Roboto Mono';
+}
+
+.project-info h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.project-info h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.project-info p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* BUTTONS */
+.btn-group {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.know-more {
+  background: #6d28d9;
+  color: #fff;
+}
+
+.know-more:hover {
+  background: #5b21b6;
+}
+
+.preview {
+  border: 2px solid #6d28d9;
+  color: #6d28d9;
+}
+
+.preview:hover {
+  background: #6d28d9;
+  color: #fff;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column;
+  }
+
+    .project-info {
+    position: static;
+    width: 90%;
+    margin-top: -126px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+ .project-card img {
+    border-radius: 15px;
+    width: 102%;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+}
