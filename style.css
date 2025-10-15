@@ -82,6 +82,7 @@ body {
   cursor: pointer;
   transition: 0.3s;
    font-family: 'Roboto Mono';
+   text-decoration: none;
 }
 
 .work-button:hover {
