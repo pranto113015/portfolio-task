@@ -11,6 +11,7 @@
 :root {
   --primary-color: #5924ed;
   --secondary-color: #0d081a;
+  --secondary-gray-color: #48464b;
   --body-bg-color: #efebfa;
 }
 
@@ -160,50 +161,63 @@ section {
   }
 }
 
-/* Services Section */
-.services-container {
-  max-width: 1200px;
-  margin: 4rem auto;
-  padding: 0 1rem;
-  text-align: center;
-}
+/* Services Section CSS */
+
 .service-heading {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: clamp(2rem, 10vw, 8rem);
+  margin-bottom: 10rem;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  letter-spacing: 0.2rem;
+}
+.service-heading::before {
+  content: attr(heading-outline);
+  position: absolute;
+  left: 2%;
+  top: -20%;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(2rem, 10vw, 8rem);
+  margin-bottom: 2rem;
+  letter-spacing: 0.2rem;
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--primary-color);
+  z-index: -1;
+  opacity: 0.2;
 }
 
-.services-container h2 {
-  /* font-weight: 900; */
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
-  letter-spacing: 2px;
-  color: #111;
-  font-size: 4rem;
+#services {
+  padding: 15rem 0;
 }
 
-.services-grid {
+#services .container .all-services-items {
   display: flex;
-  justify-content: center;
-  gap: 3rem;
-  flex-wrap: wrap;
-  right: 30px;
-  font-family: "Roboto Mono";
+  align-items: flex-start;
+  padding: 1.5rem;
+  flex: 1;
 }
 
-.service-item {
-  padding: 2rem;
-  border-radius: 15px;
-  flex: 1 1 280px;
-  max-width: 320px;
-  text-align: left;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+#services .all-services-items .service-item {
+  padding: 1.5rem;
+  border-radius: 12px;
+
+  transition: 0.3s ease-in-out background-color;
+}
+
+#services .all-services-items .service-item:nth-child(1):hover {
+  background-color: rgb(8 69 241 / 35%);
+}
+#services .all-services-items .service-item:nth-child(2):hover {
+  background-color: rgba(0, 255, 115, 0.151);
+}
+#services .all-services-items .service-item:nth-child(3):hover {
+  background-color: #cbbef093;
 }
 
 .service-item:hover {
   background-color: #f5f3ff;
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .icon-circle {
@@ -231,38 +245,54 @@ section {
   background-color: #a386ff;
 }
 
-.service-item h3 {
-  font-weight: bold;
-  margin-bottom: 0.75rem;
-  font-size: 1.1rem;
-  color: #222;
-  font-family: "Poppins";
+.card-title {
+  font-size: 18px;
+  color: var(--text-color);
+  margin-top: 11px;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 12px;
+  margin-bottom: 0px;
+  color: var(--secondary-gray-color);
+}
+
+@media only screen and (max-width: 768px) {
+  #services .container .all-services-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #services .all-services-items .service-item {
+    margin-bottom: 1rem;
+    width: 100%;
+ 
+  }
+  .icon-circle {
+    margin: 0 auto 1rem;
+  }
+  .card-title {
+    text-align: center;
+  }
+  .card-description {
+    text-align: center;
+  }
+  #services .all-services-items .service-item:nth-child(1) {
+    background-color: rgb(8 69 241 / 35%);
+  }
+  #services .all-services-items .service-item:nth-child(2) {
+    background-color: rgba(0, 255, 115, 0.151);
+  }
+  #services .all-services-items .service-item:nth-child(3) {
+    background-color: #cbbef093;
+  }
 }
 
 .stat-box p {
   font-size: 0.9rem;
   line-height: 1.5;
   font-family: "Roboto Mono";
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .services-container h2 {
-    font-size: 3rem;
-  }
-
-  .services-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .service-item {
-    max-width: 100%;
-    text-align: -webkit-center;
-    background-color: rgb(8 69 241 / 35%);
-    width: 96%;
-    margin-left: 24px;
-  }
 }
 
 .stats-container {
