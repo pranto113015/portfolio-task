@@ -11,73 +11,107 @@
     <!-- start hero section -->
     <section id="hero">
       <div class="container">
-        <!-- Left Section -->
-        <div class="hero-text">
+        <!-- Left Section Start -->
+        <div class="left-hero-text">
           <p class="intro">I'M AMY</p>
-          <h1>Pixels with<br />purpose</h1>
-          <p class="description">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti
-            atque eaque eveniet delectus rerum soluta, rem officiis temporibus
-            commodi cumque!
+          <h1 class="sub-intro">Pixels with purpose</h1>
+          <p class="hero-description">
+            I work with companies and agencies around the world, building Web
+            sites and application UIs with strong focus on responsive design,
+            accessibility, performance,
           </p>
 
           <div class="button-group">
-            <a href="#" class="work-button">See My Works</a>
-            <button class="play-button" aria-label="Play Button">
-              <!-- use svg polygon -->
-              <svg width="35" height="35" viewBox="0 0 24 24" fill="none">
-                <polygon points="10,8 16,12 10,16" fill="#7c3aed" />
+            <a href="#projects" class="work-button">See My Works</a>
+            <a href="#play" class="play-button">
+              <!-- use w3org svg -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
               </svg>
-            </button>
+            </a>
           </div>
         </div>
+        <!-- Left Section End -->
 
-        <!-- Right Section -->
-        <div class="hero-image">
+        <!-- Right Section Start -->
+        <div class="right-hero-img">
           <img src="./img/profile.jpg" alt="hero_section_img" />
         </div>
+        <!-- Right Section End -->
       </div>
     </section>
-    <!-- end hero section  -->
+    <!--  hero section end-->
 
     <!-- Start services section -->
-    <section class="services-container">
-      <h2 class="service-heading">SERVICES</h2>
-      <div class="services-grid">
-        <article class="service-item" aria-labelledby="webdesign-title">
+    <section id="services">
+      <div class="container">
+        <h2 class="service-heading" heading-outline="Services">SERVICES</h2>
+      <div class="all-services-items">
+
+        <div class="service-item" >
           <div class="icon-circle icon-webdesign" aria-hidden="true">🖥️</div>
-          <h3 id="webdesign-title">Web Design</h3>
-          <p>
+          <h3 class="card-title">Web Design</h3>
+          <p class="card-description">
             I build up the high performance website with blazing fast speed.
             Website with high performance can lead the visitor more.
           </p>
-        </article>
+        </div>
 
-        <article class="service-item" aria-labelledby="uiux-title">
+       <div class="service-item" >
           <div class="icon-circle icon-uiux" aria-hidden="true">🎨</div>
-          <h3 id="uiux-title">UI/UX</h3>
-          <p>
+          <h3 class="card-title">UI/UX</h3>
+          <p class="card-description">
             I do ui/ux design for the website that assists website to get an
             outstanding look. Unique design creates a unique personality for
             websites.
           </p>
-        </article>
+        </div>
 
-        <article class="service-item" aria-labelledby="seo-title">
+         <div class="service-item" >
           <div class="icon-circle icon-seo" aria-hidden="true">📈</div>
-          <h3 id="seo-title">SEO</h3>
-          <p>
+          <h3 class="card-title">SEO</h3>
+          <p class="card-description">
             With SEO, your business wants to increase its visibility in search
             results on search engines. I also provide SEO services to rank your
             website.
           </p>
-        </article>
+        </div>
+
+      </div>
       </div>
     </section>
     <!-- End services section -->
 
+
+
+
+    
+
+
+
+
+
+
+
+
     <!-- Start stats section -->
-    <section class="stats-container" aria-label="Statistics">
+    <!-- <section class="stats-container" aria-label="Statistics">
       <h2>STATS</h2>
       <div class="stats-grid">
         <div class="stat-box stat-yellow">
@@ -110,18 +144,12 @@
           </p>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- end stats section -->
 
-
-    
-
-
-
-
     <!-- Start projects section -->
-    
-    <section class="projects-section">
+
+    <!-- <section class="projects-section">
       <h1 class="title">PROJECTS</h1>
       <div class="project-card">
         <img src="./img/project-one.jpg" alt="Real Chat" />
@@ -174,6 +202,6 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
   </body>
 </html>
