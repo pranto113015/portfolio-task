@@ -202,8 +202,8 @@ section {
 #services .all-services-items .service-item {
   padding: 1.5rem;
   border-radius: 12px;
-
-  transition: 0.3s ease-in-out background-color;
+  flex: 1;
+  transition: 0.3s ease-in-out var(--body-bg-color);
 }
 
 #services .all-services-items .service-item:nth-child(1):hover {
@@ -287,26 +287,9 @@ section {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Stats Section CSS */
 
-
-
-.stat-heading{
+.stat-heading {
   font-family: "Montserrat", sans-serif;
   font-size: clamp(2rem, 10vw, 8rem);
   margin-bottom: 10rem;
@@ -331,39 +314,34 @@ section {
   opacity: 0.2;
 }
 
-#stat{
+#stat {
   padding: 15rem 0;
 }
-
 
 #stat .all-stat-item {
   display: flex;
   align-items: stretch;
   justify-content: center;
-
 }
 
-
-
-#stat .all-stat-item .stat-item{
-padding: 2rem;
-
+#stat .all-stat-item .stat-item {
+  padding: 2rem;
 }
 
-.stat-number{
+.stat-number {
   font-weight: 900;
-  font-size: 4.25rem;
+  font-size: 8rem;
   margin-bottom: 0.5rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-.stat-title{
+.stat-title {
   font-size: 18px;
   color: var(--text-color);
   margin-top: 11px;
   margin-bottom: 10px;
 }
-.stat-description{
+.stat-description {
   font-size: 15px;
   color: var(--secondary-gray-color);
 }
@@ -395,25 +373,23 @@ padding: 2rem;
   color: #111;
 }
 
-
-@media only screen and (max-width: 768px) {
-	#stat .all-stat-item {
-		flex-direction: column;
-	}
+.stat-item:nth-child(1),
+.stat-item:nth-child(2),
+.stat-item:nth-child(3) {
+  margin: 4px 0px;
+  border-radius: 0%;
 }
 
+@media only screen and (max-width: 768px) {
+  #stat .all-stat-item {
+    flex-direction: column;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
+  .stat-number {
+    font-size: 7.25rem;
+    margin-bottom: 0.5rem;
+  }
+}
 
 /* .stat-box p {
 .stat-box p {
@@ -495,29 +471,6 @@ padding: 2rem;
     max-width: 100%;
   }
 } */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Projects Section Normal css */
 .title {
