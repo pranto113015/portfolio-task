@@ -1,4 +1,4 @@
-# 🎨 AMY - Personal Portfolio Website
+# 🎨 AMY -  Portfolio Website
 
 This is a **responsive and modern personal portfolio website** built using HTML5 and CSS3. It's designed  to showcase my working skills and experience.
 
