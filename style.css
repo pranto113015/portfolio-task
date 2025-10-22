@@ -128,6 +128,7 @@ section {
 
   #hero .container .left-hero-text .sub-intro {
     font-size: 4rem;
+    line-height: 48px;
   }
 
   #hero .container .left-hero-text .intro {
@@ -143,8 +144,9 @@ section {
     flex: 1 1 100%;
     height: fit-content;
   }
-  .button-group {
+    .button-group {
     justify-self: center;
+    margin-bottom: 50px;
   }
   #hero .right-hero-img img {
     height: 400px;
@@ -156,8 +158,9 @@ section {
   #hero .container .right-hero-text {
     flex: 6;
   }
-  #hero .container .left-hero-text .hero-description {
-    margin-top: 3.5rem;
+    #hero .container .left-hero-text .hero-description {
+    margin-top: 2.5rem;
+    word-spacing: 1px;
   }
 }
 
@@ -234,6 +237,10 @@ section {
 .icon-webdesign {
   background-color: #7ea8ff;
 }
+.icon-png1 {
+  width: 24px;
+  height: 24px;
+}
 
 .icon-uiux {
   background-color: #84f4c6;
@@ -260,6 +267,7 @@ section {
   #services .container .all-services-items {
     flex-direction: column;
     align-items: center;
+    row-gap: 28px;
   }
 
   #services .all-services-items .service-item {
@@ -269,8 +277,12 @@ section {
   .icon-circle {
     margin: 0 auto 1rem;
   }
-  .card-title {
+    .card-title {
     text-align: center;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
   }
   .card-description {
     text-align: center;
@@ -524,6 +536,8 @@ section {
   font-size: 1.8rem;
   font-weight: 500;
   transition: 0.3s;
+  width: 100%;
+  text-align: center;
 }
 
 .btn-group .preview {
@@ -534,6 +548,8 @@ section {
   font-size: 1.8rem;
   font-weight: 500;
   transition: 0.3s;
+    width: 100%;
+  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
@@ -556,4 +572,7 @@ section {
     width: 90%;
     margin-top: -150px;
   }
+  .btn-group {
+flex-direction: column;
+}
 }
