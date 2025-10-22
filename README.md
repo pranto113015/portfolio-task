@@ -2,13 +2,13 @@
 
 This is a **responsive and modern personal portfolio website** built using HTML5 and CSS3. It's designed  to showcase my working skills and experience.
 
----
+
 
 ## 🔗 Live Preview
 
 [👉 View Live Site](https://pranto113015.github.io/portfolio-task/) 
 
----
+
 
 ## 📋 Table of Contents
 
@@ -18,7 +18,7 @@ This is a **responsive and modern personal portfolio website** built using HTML5
 - [🛠️ Technologies Used](#-technologies-used)
 - [🚀 Getting Started](#-getting-started)
 
----
+
 
 ## 📌 Overview
 
@@ -31,7 +31,7 @@ This portfolio project includes the following sections:
 
 This project follows modern responsive design principles and is mobile-friendly.
 
----
+
 
 ## ✨ Features
 
@@ -43,7 +43,7 @@ This project follows modern responsive design principles and is mobile-friendly.
 - ✅ Google Fonts Integration
 - ✅ Easy to Customize
 
----
+
 
 ## 📁 Folder Structure
 ```
@@ -61,7 +61,7 @@ This project follows modern responsive design principles and is mobile-friendly.
 ```
 
 
----
+
 
 ## 🛠️ Technologies Used
 
@@ -71,7 +71,7 @@ This project follows modern responsive design principles and is mobile-friendly.
 - ✅ Emojis for icons  
 - ❌ No JavaScript  
 
----
+
 
 ## 🚀 Getting Started
 
