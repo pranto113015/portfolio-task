@@ -559,11 +559,12 @@ color: black;
 }
 
 
-@media only screen and (max-width: 360px) {
+/* @media only screen and (min-width: 350px) and (max-width: 455px) {
   .btn-group {
     flex-direction: column;
   }
-}
+} */
+
 @media only screen and (max-width: 768px) {
   #project .project-item {
     flex-direction: column;
@@ -583,6 +584,9 @@ color: black;
     margin-left: 0;
     width: 90%;
     margin-top: -150px;
+  }
+    .btn-group {
+    flex-direction: column;
   }
 }
 
