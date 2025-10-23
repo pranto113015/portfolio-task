@@ -82,15 +82,19 @@ section {
   word-spacing: 5px;
 }
 
-#hero .container .right-hero-text {
+#hero .right-hero-img {
   flex: 8;
+  text-align: right;
 }
 
-#hero .right-hero-img img {
+#hero .right-hero-img img{
   width: 100%;
   max-width: 450px;
   border-radius: 10px;
   height: 600px;
+  object-fit: cover;
+	object-position: 50% 30%;
+	border-radius: 12px;
 }
 
 .button-group {
@@ -205,7 +209,7 @@ section {
   padding: 1.5rem;
   border-radius: 12px;
   flex: 1;
-  transition: 0.3s ease-in-out var(--body-bg-color);
+  transition: 0.3s ease-in-out background-color;
 }
 
 #services .all-services-items .service-item:nth-child(1):hover {
@@ -252,13 +256,15 @@ section {
 
 .card-title {
   font-size: 18px;
+    font-family: 'Poppins';
+    font-weight: 500;
   color: var(--text-color);
   margin-top: 11px;
   margin-bottom: 10px;
 }
 
 .card-description {
-  font-size: 15px;
+  font-size: 14px;
   color: var(--secondary-gray-color);
 }
 
@@ -296,6 +302,7 @@ section {
   #services .all-services-items .service-item:nth-child(3) {
     background-color: #cbbef093;
   }
+  
 }
 
 /* Stats Section CSS */
@@ -338,10 +345,11 @@ section {
   padding: 2rem;
 }
 
+
 .stat-number {
   font-weight: 900;
   font-size: 8rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: -1.5rem;
   font-family: "Poppins", sans-serif;
 }
 
@@ -352,8 +360,8 @@ section {
   margin-bottom: 10px;
 }
 .stat-description {
-  font-size: 15px;
-  color: var(--secondary-gray-color);
+    font-size: 15px;
+    color: var(--secondary-color);
 }
 
 .stat-item:nth-child(1) {
@@ -476,7 +484,7 @@ section {
 #project .project-item .left .img {
   border-radius: 12px;
   height: 500px;
-  box-shadow: 0px 0px 20px #00000028;
+  box-shadow: 0px 0px 20px #4705fc33;
   position: relative;
   overflow: hidden;
 }
@@ -488,7 +496,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+    background-color: #5a24ed38;
   border-radius: 12px;
 }
 
@@ -503,10 +511,10 @@ section {
 }
 
 #project .project-item .right .project-title {
-  font-family: "Poppins", sans-serif;
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-  font-weight: 600;
+    font-family: 'Montserrat';
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
 }
 
 #project .project-item .right h3 {
@@ -572,7 +580,7 @@ section {
     width: 90%;
     margin-top: -150px;
   }
-  .btn-group {
+  /* .btn-group {
 flex-direction: column;
-}
+} */
 }
