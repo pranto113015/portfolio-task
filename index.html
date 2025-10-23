@@ -8,6 +8,24 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!--  Popup window -->
+    <div id="videoPopup" class="popup">
+      <div class="popup-content">
+        <span id="closePopup">&times;</span>
+        <iframe
+          id="youtubeVideo"
+          width="520"
+          height="345"
+          src="https://www.youtube.com/embed/tgbNymZ7vqY"
+          title="YouTube video player"
+          frameborder=""
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+    </div>
+
     <!-- start hero section -->
     <section id="hero">
       <div class="container">
@@ -23,7 +41,7 @@
 
           <div class="button-group">
             <a href="#projects" class="work-button">See My Works</a>
-            <a href="#play" class="play-button">
+            <a href="#play" id="openPopup" class="play-button">
               <!-- use w3org svg -->
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -210,6 +228,8 @@
         </div>
       </div>
     </section>
-    <!-- End projects section -->
+    <!-- End projects sect/ion -->
+
+    <script src="script.js"></script>
   </body>
 </html>
