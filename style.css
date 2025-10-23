@@ -658,7 +658,7 @@ color: black;
     height: 270px;
   }
   .popup-content {
-    margin-top: 345px;
+    margin-top: 385px;
   }
 }
 
@@ -668,7 +668,7 @@ color: black;
     height: 270px;
   }
   .popup-content {
-    margin-top: 345px;
+    margin-top: 285px;
   }
 }
 
@@ -678,7 +678,7 @@ color: black;
     height: 270px;
   }
   .popup-content {
-    margin-top: 345px;
+    margin-top: 285px;
   }
 }
 
@@ -688,11 +688,25 @@ color: black;
     height: 180px;
   }
   .popup-content {
-    margin-top: 345px;
+    margin-top: 340px;
   }
 }
 
 @media screen and (max-width: 400px) {
+  #youtubeVideo {
+    width: 280px;
+    height: 158px;
+  }
+  #closePopup {
+    top: -32px;
+    font-size: 26px;
+    right: 3px;
+  }
+  .popup-content {
+    margin-top: 345px;
+  }
+}
+@media screen and (max-width: 360px) {
   #youtubeVideo {
     width: 280px;
     height: 158px;
